@@ -9,8 +9,13 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no testing inh specified\" && exit 1"
+    "test": "echo \"Error: no testing inh specified\" && exit 1",
+	"start" : "node index.js"
   },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nikhil722sharma/hackercamp.git"
