@@ -26,7 +26,10 @@ var pcConfig = {
 	'urls': 'turn:192.158.29.39:3478?transport=tcp',
 	'credential': 'JZEOEt2V3Qb0y27GRntt2u2PAYA=',
 	'username': '28224511:1379330808'
-}]
+},
+{ 'urls': "stun:188.166.238.179:5349" },
+{ 'urls': "stun:stun.l.google.com:19302" },
+{ 'urls': "stun:global.stun.twilio.com:3478?transport=udp" }]
 };
 
 // Set up audio and video regardless of what devices are present.
