@@ -10,9 +10,7 @@ var turnReady;
 
 var pcConfig = {
   'iceServers': [{
-    'urls': 'turn:numb.viagenie.ca',
-    'credential': 'muazkh',
-  'username': 'webrtc@live.com'
+    'urls': 'stun:stun.l.google.com:19302'
   }]
 };
 
@@ -96,7 +94,7 @@ var localVideo = document.querySelector('#localVideo');
 var remoteVideo = document.querySelector('#remoteVideo');
 
 navigator.mediaDevices.getUserMedia({
-  audio: true,
+  audio: false,
   video: true
 })
 .then(gotStream)
@@ -115,8 +113,7 @@ function gotStream(stream) {
 }
 
 var constraints = {
-  video: true,
-  audio: true
+  video: true
 };
 
 console.log('Getting user media with constraints', constraints);
